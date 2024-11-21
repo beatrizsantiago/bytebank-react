@@ -1,3 +1,5 @@
+declare module "@bytebank/styleguide"
+
 declare module "*.html" {
   const rawHtmlFile: string;
   export = rawHtmlFile;
