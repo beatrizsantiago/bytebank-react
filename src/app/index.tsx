@@ -6,7 +6,7 @@ import '../styles/global.css';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/painel',
     element: <Dashboard />,
   },
 ]);
