@@ -7,7 +7,7 @@ type Props = {
 }
 
 const activeIndex:{[key: string]:number} = {
-  '/dashboard': 0,
+  '/painel': 0,
   '/transferencias': 1,
   '/investimentos': 2,
   '/outros': 3,
@@ -21,7 +21,7 @@ const NavigationMenu = ({ inline = false }:Props) => {
     <Menu
       activeIndex={activeIndex[pathname]}
       items={[
-        { title: 'Início', onClick: () => navigate('/dashboard') },
+        { title: 'Início', onClick: () => navigate('/painel') },
         { title: 'Transferências', onClick: () => toast.warning('Página ainda não implementada!') },
         { title: 'Investimentos', onClick: () => toast.warning('Página ainda não implementada!') },
         { title: 'Outros serviços', onClick: () => toast.warning('Página ainda não implementada!') },
